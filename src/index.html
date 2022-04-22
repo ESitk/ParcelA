@@ -1,8 +1,77 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
+    <title>Evan Sample Project Site</title>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        box-sizing: border-box;
+        font-family: -apple-system, system-ui;
+        color-scheme: dark light;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      header a {
+        color: inherit;
+      }
+
+      header svg {
+        fill: currentColor;
+      }
+
+      .targets {
+        display: table;
+        margin-top: 10px;
+      }
+
+      .targets label {
+        display: table-row;
+      }
+
+      .targets label span,
+      .targets label input {
+        display: table-cell;
+      }
+
+      main {
+        display: flex;
+        flex: 1
+      }
+
+      textarea {
+        flex: 1;
+        font: 14px monospace;
+      }
+
+      label {
+        display: block;
+      }
+
+      h3 {
+        margin-bottom: 4px;
+      }
+
+      div > h3:first-child {
+        margin-top: 0;
+      }
+    </style>
+ 
+
     <meta charset="utf-8"/>
-    <title>ChangeAndSense</title>
+
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="app.js"></script>
   </head>
